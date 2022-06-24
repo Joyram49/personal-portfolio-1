@@ -1,0 +1,41 @@
+.works_logo {
+  width: 6.5rem;
+  height: 6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 6px solid #f1f1f1;
+  z-index: 2;
+}
+.works_logo img {
+  width: 2.8rem;
+}
+
+/* Media Query(MAX WIDTH- 1024PX) */
+
+@media only screen and (max-width: 1024px) {
+  .works_logo {
+    width: 4.5rem;
+    height: 4.2rem;
+    border: 4px solid #f1f1f1;
+  }
+  .works_logo img {
+    width: 2rem;
+  }
+}
+
+/* Media Query(MAX WIDTH- 480PX) */
+
+@media only screen and (max-width: 480px) {
+  .works_logo {
+    width: 4rem;
+    height: 3.8rem;
+    border: 4px solid #f1f1f1;
+  }
+  .works_logo img {
+    width: 1.8rem;
+  }
+}

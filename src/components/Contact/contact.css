@@ -1,0 +1,88 @@
+.contact {
+  height: 60vh;
+  width: 80%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact_left h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+.contact_left h1:nth-of-type(2) {
+  color: var(--orange);
+}
+.contact_right {
+  margin-top: 5rem;
+  position: relative;
+}
+.contact_right form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.user {
+  padding: 10px 15px;
+  border: 2px solid var(--orange);
+  border-radius: 8px;
+  width: 20rem;
+  color: var(--gray);
+}
+.user_textarea {
+  min-width: 5rem;
+  max-width: 20rem;
+  max-height: 10rem;
+  min-height: 2rem;
+}
+.contact_btn {
+  width: 6rem;
+  margin: 0 auto;
+}
+
+/* Media Query(MAX WIDTH- 1024PX) */
+
+@media only screen and (max-width: 1024px) {
+  .contact {
+    height: 50vh;
+    width: 90%;
+  }
+  .contact_left h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Media Query(MAX WIDTH- 768PX) */
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    height: 50vh;
+    width: 100%;
+  }
+  .contact_right form {
+    gap: 1.4rem;
+  }
+  .user {
+    padding: 6px 10px;
+    width: 15rem;
+    font-size: 16px;
+  }
+  .user_textarea {
+    max-width: 15rem;
+  }
+}
+
+/* Media Query(MAX WIDTH- 480PX) */
+
+@media only screen and (max-width: 480px) {
+  .contact {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+  }
+}

@@ -1,0 +1,35 @@
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid var(--orange);
+  border-radius: 16px;
+  padding: 2px;
+  cursor: pointer;
+  position: relative;
+  top: 0.2rem;
+}
+.toggle > * {
+  width: 1rem;
+  height: 1rem;
+  color: var(--orange);
+}
+.toggle_btn {
+  background-color: var(--orange);
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* Media Query(MAX WIDTH- 1024PX) */
+
+@media only screen and (max-width: 1024px) {
+  .toggle {
+    top: 0;
+  }
+  .toggle > * {
+    width: 0.7rem;
+    height: 0.7rem;
+    color: var(--orange);
+  }
+}

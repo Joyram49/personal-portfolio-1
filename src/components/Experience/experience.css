@@ -1,0 +1,87 @@
+.experience {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+.exp_circle {
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.exp_circle::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  z-index: -1;
+  border-radius: 50%;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.achievement h3,
+.achievement h4 {
+  text-align: center;
+  margin-left: -0.5rem;
+}
+.achievement h3 {
+  color: var(--orange);
+}
+
+/* Media Query(MAX WIDTH- 1440PX) */
+
+@media only screen and (max-width: 1440px) {
+  .experience {
+    height: 40vh;
+    margin-top: 5rem;
+  }
+}
+
+/* Media Query(MAX WIDTH- 1024PX) */
+
+@media only screen and (max-width: 1024px) {
+  .experience {
+    height: 50vh;
+    padding-top: 10rem;
+  }
+}
+/* Media Query(MAX WIDTH- 768PX) */
+
+@media only screen and (max-width: 768px) {
+  .experience {
+    max-width: 80%;
+    gap: 6rem;
+    margin: 10rem auto 0rem;
+  }
+}
+
+/* Media Query(MAX WIDTH- 480PX) */
+
+@media only screen and (max-width: 480px) {
+  .experience {
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 20rem;
+  }
+  .exp_circle {
+    margin-bottom: 1rem;
+  }
+}

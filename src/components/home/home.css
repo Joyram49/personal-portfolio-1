@@ -1,0 +1,220 @@
+.home {
+  height: 90vh;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  position: relative;
+}
+.left_desc h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+.left_desc h1:nth-of-type(2) {
+  color: var(--orange);
+}
+.left_desc p {
+  color: #8f8f8f;
+  text-align: justify;
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+.home_btn {
+  padding: 9px 40px;
+  margin-bottom: 2rem;
+}
+.home_icons {
+  position: absolute;
+  bottom: 15rem;
+  left: 2rem;
+  display: flex;
+  gap: 3rem;
+}
+.home_icons img {
+  width: 2.5rem;
+}
+.home_right {
+  width: 100%;
+  height: 100%;
+}
+.right_content {
+  position: relative;
+}
+.right_content > * {
+  position: absolute;
+}
+.right_content img:nth-of-type(1) {
+  transform: scale(0.9);
+  top: 2rem;
+}
+.right_content img:nth-of-type(2) {
+  transform: scale(0.78);
+  top: 1rem;
+  left: 1rem;
+}
+.right_content img:nth-of-type(3) {
+  transform: scale(1.67);
+  top: 5.8rem;
+  left: 11rem;
+}
+.right_content img:nth-of-type(4) {
+  transform: scale(0.78);
+  top: -4rem;
+  left: -8.5rem;
+}
+.right_content > :nth-child(5) {
+  top: 2rem;
+  right: 2rem;
+}
+.right_content > :nth-child(6) {
+  top: 25.7rem;
+  left: 2rem;
+}
+.blur {
+  position: absolute;
+  top: -2rem;
+  right: -5rem;
+  width: 22rem;
+  height: 18rem;
+  background-color: #edd0ff;
+  border-radius: 50%;
+  filter: blur(86px);
+  z-index: -9;
+}
+
+/* Media Query(MAX WIDTH- 1440PX) */
+
+@media only screen and (max-width: 1440px) {
+  .home {
+    height: 100vh;
+    gap: 1rem;
+  }
+  .right_content img:nth-of-type(1) {
+    transform: scale(0.75);
+  }
+  .right_content img:nth-of-type(2) {
+    transform: scale(0.67);
+  }
+  .right_content img:nth-of-type(3) {
+    transform: scale(1.4);
+  }
+  .right_content img:nth-of-type(4) {
+    transform: scale(0.6);
+  }
+  .right_content > :nth-child(5) {
+    top: 3rem;
+    right: -2rem;
+  }
+  .right_content > :nth-child(6) {
+    top: 24rem;
+    left: 4rem;
+  }
+}
+
+/* Media Query(MAX WIDTH- 1024PX) */
+
+@media only screen and (max-width: 1024px) {
+  .home {
+    height: 100vh;
+    margin-top: 3rem;
+    grid-template-columns: 2fr 3fr;
+  }
+  .left_desc h1 {
+    font-size: 2.5rem;
+    line-height: 0.8;
+    margin-bottom: 1rem;
+  }
+  .left_desc p {
+    font-size: 16px;
+  }
+  .home_icons {
+    bottom: 7rem;
+    left: 2rem;
+  }
+  .home_icons img {
+    width: 2rem;
+  }
+  .right_content img:nth-of-type(1) {
+    transform: scale(0.55);
+  }
+  .right_content img:nth-of-type(2) {
+    transform: scale(0.5);
+  }
+  .right_content img:nth-of-type(3) {
+    transform: scale(1.1);
+  }
+  .right_content img:nth-of-type(4) {
+    transform: scale(0.6);
+  }
+  .right_content > :nth-child(6) {
+    top: 22.3rem;
+  }
+}
+
+/* Media Query(MAX WIDTH- 768PX) */
+
+@media only screen and (max-width: 768px) {
+  .home {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+  .home_icons {
+    position: absolute;
+    bottom: 27rem;
+    left: 22rem;
+    display: flex;
+    gap: 2rem;
+  }
+  .right_content {
+    margin-top: -10rem;
+  }
+  .right_content img:nth-of-type(4) {
+    transform: scale(0.58);
+    top: 0rem;
+  }
+}
+
+/* Media Query(MAX WIDTH- 480PX) */
+
+@media only screen and (max-width: 480px) {
+  .left_desc h1 {
+    font-size: 2rem;
+    line-height: 0.8;
+  }
+  .home_icons {
+    display: none;
+  }
+  .right_content {
+    margin-top: -5rem;
+    margin-left: -8rem;
+  }
+  .right_content img:nth-of-type(1) {
+    transform: scale(0.35);
+    top: 2.5rem;
+    left: -2rem;
+  }
+  .right_content img:nth-of-type(2) {
+    transform: scale(0.35);
+    top: 0rem;
+    left: -2rem;
+  }
+  .right_content img:nth-of-type(3) {
+    transform: scale(0.8);
+    top: 5.3rem;
+    left: 8rem;
+  }
+  .right_content img:nth-of-type(4) {
+    transform: scale(0.4);
+    top: 1rem;
+  }
+  .right_content > :nth-child(5) {
+    initial-value: ri;
+  }
+  .right_content > :nth-child(6) {
+    top: 20rem;
+  }
+}

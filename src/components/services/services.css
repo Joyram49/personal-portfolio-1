@@ -1,0 +1,118 @@
+.service {
+  height: 90vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2rem;
+}
+.service_left {
+  margin-top: 3rem;
+}
+.service_left h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.service_left > :nth-child(2) {
+  color: var(--orange);
+}
+.service_left > :nth-child(3) {
+  margin: 0.7rem 0 3rem;
+  font-weight: 500;
+  color: #8f8f8f;
+  text-align: justify;
+  font-size: 18px;
+}
+.service_right {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.service_right > :nth-child(1) {
+  position: absolute;
+  top: 1rem;
+  right: 12rem;
+}
+.service_right > :nth-child(2) {
+  position: absolute;
+  top: 14rem;
+  left: 5rem;
+}
+.service_right > :nth-child(3) {
+  position: absolute;
+  top: 24rem;
+  right: 12rem;
+}
+
+/* Media Query(MAX WIDTH- 1440PX) */
+
+@media only screen and (max-width: 1440px) {
+  .service {
+    height: 100vh;
+    gap: 1rem;
+    margin: 0;
+  }
+  .service_right > :nth-child(1) {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .service_right > :nth-child(2) {
+    position: absolute;
+    top: 14rem;
+    left: 2rem;
+  }
+  .service_right > :nth-child(3) {
+    position: absolute;
+    top: 24rem;
+    right: 1rem;
+  }
+}
+
+/* Media Query(MAX WIDTH- 1024PX) */
+
+@media only screen and (max-width: 1024px) {
+  .service {
+    height: 100vh;
+    grid-template-columns: 3fr 5fr;
+    gap: 1rem;
+  }
+  .service_left h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .service_left > :nth-child(3) {
+    font-size: 16px;
+  }
+}
+
+/* Media Query(MAX WIDTH- 768PX) */
+
+@media only screen and (max-width: 768px) {
+  .service {
+    margin-top: 10rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr;
+  }
+}
+
+/* Media Query(MAX WIDTH- 480PX) */
+
+@media only screen and (max-width: 480px) {
+  .service {
+    margin-top: 10rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr;
+  }
+  .service_left {
+    margin-bottom: 3rem;
+  }
+  .service_right > :nth-child(1) {
+    position: absolute;
+    top: -1rem;
+  }
+  .service_right > :nth-child(3) {
+    top: 29rem;
+  }
+}
